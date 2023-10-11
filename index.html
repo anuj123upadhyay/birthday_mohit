@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Celebration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function birthday(){
+            let a = 'Wish You a Very Happy Bithday To You Mohit'
+            alert(a);
+            document.getElementById('x').innerHTML= a;
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-600">
+   <div>
+    <div class="flex flex-col">
+        <nav class="bg-indigo-300 h-14 flex justify-evenly items-center">
+            <div class="text-bold text-yellow-600 text-xl md:text-3xl font-mono">Happy Birthday !!</div>
+            <div class="text-bold  text-orange-300 text-xl md:text-3xl  font-mono">Happy Birthday !!</div>
+            <div class="text-bold  text-green-300 text-xl md:text-3xl font-mono">Happy Birthday !!</div>
+            
+            
+        </nav>
+        <video  controls class='h-50vh w-50vw md:h-screen md:w-screen overflow-hidden block' src="birthday.mp4"></video>
+       <div class="flex justify-center">
+        <input  class="mt-5 bg-yellow-300 px-3 py-3 text-bold rounded-2xl    w-[100px] text-center flex justify-center hover:bg-transparent hover:text-cyan-100 border border-yellow-200 cursor-pointer " type="button" value="Press Me " onclick="birthday()">
+       </div>
+       <div>
+        <p id="x" class="bg-red-200"></p>
+       </div>
+    </div>
+   
+   </div>
+   
+</body>
+</html>
